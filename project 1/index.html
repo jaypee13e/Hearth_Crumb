@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Hearth &amp; Crumb | Neighborhood bakery</title>
+    <meta
+      name="description"
+      content="Slow-fermented bread, laminated pastry and good coffee. Pre-order online and pick up warm."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Figtree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="w">
+        <a class="logo" href="#top">Hearth &amp; Crumb</a>
+        <nav>
+          <a href="#menu">Menu</a><a href="#order">Pre-order</a><a href="#visit">Visit</a
+          ><a href="#faq">FAQ</a
+          ><a class="btn" href="#order" style="padding: 8px 18px; color: var(--acx)">Order</a>
+        </nav>
+      </div>
+    </header>
+    <main id="top">
+      <div class="w hero">
+        <div class="badge"><span class="dot" id="dot"></span><span id="open"></span></div>
+        <h1>Bread worth getting up for.</h1>
+        <p>
+          Slow-fermented loaves, laminated pastry and good coffee, baked every morning on Alder
+          Street.
+        </p>
+        <a class="btn" href="#order">Pre-order for pickup</a>
+        <a class="btn alt" href="#menu">See the menu</a>
+      </div>
+
+      <section id="menu">
+        <div class="w">
+          <h2>Today’s bake</h2>
+          <div class="chips" id="chips"></div>
+          <div class="menu" id="menu-grid"></div>
+        </div>
+      </section>
+
+      <section id="order">
+        <div class="w">
+          <h2>Pre-order, skip the line</h2>
+          <div class="two">
+            <div class="card" id="cart"></div>
+            <form class="card" id="form">
+              <h3 style="font-size: 22px">Pickup details</h3>
+              <label for="nm">Your name</label
+              ><input id="nm" required maxlength="40" autocomplete="name" />
+              <label for="ph">Phone</label><input id="ph" type="tel" required autocomplete="tel" />
+              <label for="dy">Pickup day</label
+              ><select id="dy"></select>
+              <label for="tm">Pickup time</label
+              ><select id="tm"></select>
+              <div class="tot"><span>Total</span><span id="tt">$0.00</span></div>
+              <button class="btn" style="width: 100%">Place pre-order</button>
+            </form>
+          </div>
+          <div id="done" style="margin-top: 16px"></div>
+        </div>
+      </section>
+
+      <section id="visit">
+        <div class="w two">
+          <div>
+            <h2>Come say hello</h2>
+            <p>14 Alder Street<br />Open every day except Monday.</p>
+            <p style="color: var(--mut)">
+              Free street parking after 9 am. Dogs welcome on the patio.
+            </p>
+          </div>
+          <div class="hrs card" id="hrs"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="w">
+          <h2>What neighbors say</h2>
+          <div class="rev">
+            <blockquote>
+              “The sourdough is the reason I stopped buying supermarket bread.”
+              <footer>Maya R.</footer>
+            </blockquote>
+            <blockquote>
+              “Pre-ordering is so easy. My croissants are boxed and waiting when I arrive.”
+              <footer>Daniel T.</footer>
+            </blockquote>
+            <blockquote>
+              “Best cardamom bun I’ve had, and the staff remember your name.”
+              <footer>Priya S.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="w">
+          <h2>Good to know</h2>
+          <details>
+            <summary>How far ahead can I pre-order?</summary>
+            <p>Up to three days. Orders close an hour before your pickup slot.</p>
+          </details>
+          <details>
+            <summary>Do you have gluten-free or vegan options?</summary>
+            <p>
+              Our oat flat white and olive oil cake are vegan. We bake in a shared kitchen, so we
+              can’t guarantee gluten-free.
+            </p>
+          </details>
+          <details>
+            <summary>Can you cater an event?</summary>
+            <p>
+              Yes. Pastry boxes and bread platters for 10 to 60 people. Ask at the counter or call
+              us.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <div class="pitch">
+      <div class="w">
+        <div>
+          <strong>Want a website like this for your business?</strong>
+          <p>
+            Demo site designed and built by <span id="devname"></span>. Fast, mobile-first, easy to
+            update.
+          </p>
+        </div>
+        <a class="btn" id="devmail" href="#">Get a free quote</a>
+      </div>
+    </div>
+    <footer class="f">
+      <div class="w">
+        © Hearth &amp; Crumb. This is a demo business made for portfolio purposes.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
